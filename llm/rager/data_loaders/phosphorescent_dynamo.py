@@ -17,7 +17,8 @@ def load_data():
     Returns:
         Anything (e.g. data frame, dictionary, array, int, str, etc.)
     """
-    file_id = "1qZjwHkvP0lXHiE4zdbWyUXSVfmVGzougDD6N37bat3E"
+    # file_id = "1qZjwHkvP0lXHiE4zdbWyUXSVfmVGzougDD6N37bat3E"
+    file_id = "1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0"
 
     faq_documents = {
         "llm-zoomcamp": file_id,
@@ -28,10 +29,7 @@ def load_data():
     for course, file_id in faq_documents.items():
         print(course)
         course_documents = read_faq(file_id)
-        print("course_documents", len(course_documents))
         documents.append({"course": course, "documents": course_documents})
-
-    print("documents", len(documents))
 
     return documents
 
