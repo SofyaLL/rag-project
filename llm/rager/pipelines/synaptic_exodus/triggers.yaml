@@ -1,0 +1,17 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2024-08-19 08:42:01.930497+00:00
+  name: search
+  pipeline_uuid: synaptic_exodus
+  schedule_interval: null
+  schedule_type: api
+  settings:
+    allow_blocks_to_fail: false
+    timeout: '3600'
+  sla: null
+  start_time: 2024-08-19 08:39:00+00:00
+  status: active
+  token: c0c36409878c49619dcc378ff9951635
+  variables:
+    index_name: documents_20240818_4235
